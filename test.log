@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.10.5)  12 OCT 2018 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2018.10.13)  13 OCT 2018 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **test.tex
 (./test.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ru
-ssian, ukrainian, bulgarian, loaded.
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 2 languages loaded.
 (./PoS.cls
 Document Class: PoS 2017/01/19 v1.2.6 LaTeX document class - P.D.
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -14,12 +13,12 @@ Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 142.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -48,7 +47,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
@@ -90,14 +89,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Info: Redefining \hbar on input line 50.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -105,7 +104,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 )
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -113,9 +112,9 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \symforjmath=\mathgroup8
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-(/usr/share/texlive/texmf-dist/tex/plain/misc/pdfcolor.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/pdfcolor.tex)
 \titlesk@a=\skip41
 \titlesk@b=\skip42
 \titlesk@c=\skip43
@@ -164,68 +163,97 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \bibindent=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\if@hyper {\edef \@pipp
+o {the\@captype } \name {\@captype \expandafter \csname \@pippo \endcsname }}\f
+i \vskip \abovecaptionskip {\let \label \@gobble \let \index \@gobble \let \glo
+ssary \@gobble \sbox \@tempboxa {\small {\bfseries #1:} #2}\global \dimen 0\wd 
+\@tempboxa }\ifdim \dimen 0 >\hsize \small {\bfseries #1:} #2\par \else \global
+ \@minipagefalse \sbox \@tempboxa {\small {\bfseries #1:} #2}\hb@xt@ \hsize {\h
+fil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count94
 ) (./apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count94
+\c@BibCnt=\count95
 \bibleftmargin=\skip48
 \bibindent=\skip49
 \bibparsep=\skip50
 \bibitemsep=\skip51
 \biblabelsep=\skip52
-)
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count95
+\linenopenalty=\count96
 \output=\toks19
-\linenoprevgraf=\count96
-\linenumbersep=\dimen114
-\linenumberwidth=\dimen115
-\c@linenumber=\count97
-\c@pagewiselinenumber=\count98
-\c@LN@truepage=\count99
-\c@internallinenumber=\count100
-\c@internallinenumbers=\count101
-\quotelinenumbersep=\dimen116
-\bframerule=\dimen117
-\bframesep=\dimen118
+\linenoprevgraf=\count97
+\linenumbersep=\dimen121
+\linenumberwidth=\dimen122
+\c@linenumber=\count98
+\c@pagewiselinenumber=\count99
+\c@LN@truepage=\count100
+\c@internallinenumber=\count101
+\c@internallinenumbers=\count102
+\quotelinenumbersep=\dimen123
+\bframerule=\dimen124
+\bframesep=\dimen125
 \bframebox=\box35
 LaTeX Info: Redefining \\ on input line 3056.
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 13.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen119
+\scratchcounter=\count103
+\scratchdimen=\dimen126
 \scratchbox=\box36
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen120
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen127
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks21
 )
-\big@size=\dimen121
+\big@size=\dimen128
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -269,156 +297,179 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for T1+phv on input line 43.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 43.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 43
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 43
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 43
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 43
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-Missing character: There is no Ë in font zptmcm7t!
-Missing character: There is no † in font zptmcm7t!
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-
-<PoSlogo.pdf, id=2, 430.60875pt x 45.16875pt>
-File: PoSlogo.pdf Graphic file (type pdf)
- <use PoSlogo.pdf>
-Package pdftex.def Info: PoSlogo.pdf used on input line 43.
-(pdftex.def)             Requested size: 430.60768pt x 45.16862pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+
+<PoSlogo.pdf, id=2, 430.60875pt x 45.16875pt>
+File: PoSlogo.pdf Graphic file (type pdf)
+ <use PoSlogo.pdf>
+Package pdftex.def Info: PoSlogo.pdf used on input line 47.
+(pdftex.def)             Requested size: 430.60768pt x 45.16862pt.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
  [0
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./PoSlogo.pdf>]
-\c@maskedRefs=\count108
- (./english.apc
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./PoSlogo.p
+df>]
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@maskedRefs=\count109
+
+(./english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
 
-[1] [2] <board_3D_altium.png, id=37, 939.51pt x 526.96875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+<board_3D_altium.png, id=22, 939.51pt x 526.96875pt>
 File: board_3D_altium.png Graphic file (type png)
+ <use board_3D_altium.png>
+Package pdftex.def Info: board_3D_altium.png used on input line 60.
+(pdftex.def)             Requested size: 344.16641pt x 193.03752pt.
 
-<use board_3D_altium.png>
-Package pdftex.def Info: board_3D_altium.png used on input line 103.
-(pdftex.def)             Requested size: 430.20639pt x 241.29892pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 104.
+[1 <./board_3D_altium.png (PNG copy)>]
+<xcku040_pinout.png, id=34, 459.7175pt x 415.5525pt>
+File: xcku040_pinout.png Graphic file (type png)
+ <use xcku040_pinout.png>
+Package pdftex.def Info: xcku040_pinout.png used on input line 73.
+(pdftex.def)             Requested size: 344.16641pt x 311.1183pt.
+
+
+LaTeX Warning: Reference `clocking' on page 2 undefined on input line 85.
+
+
+Overfull \hbox (0.47408pt too wide) in paragraph at lines 85--86
+[]\T1/ptm/m/n/10.95 The board in-cludes 5 low jit-ter pro-grammable clock sourc
+es (Fig-ure []). The GTH transceivers
+ []
+
+[2 <./xcku040_pinout.png>]
+
+LaTeX Warning: File `MGT_clocking.png' not found on input line 89.
+
+
+! Package pdftex.def Error: File `MGT_clocking.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 ...ics[width=0.8\textwidth]{MGT_clocking.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
  [3]
-<serpentine_routing.png, id=45, 1030.85126pt x 619.31375pt>
+[4] <serpentine_routing.png, id=59, 1030.85126pt x 619.31375pt>
 File: serpentine_routing.png Graphic file (type png)
 
 <use serpentine_routing.png>
-Package pdftex.def Info: serpentine_routing.png used on input line 113.
+Package pdftex.def Info: serpentine_routing.png used on input line 133.
 (pdftex.def)             Requested size: 215.1032pt x 129.22812pt.
- [4 <./board_3D_altium.png (PNG copy)> <./serpentine_routing.png>] (./test.aux)
+ [5 <./serpentine_routing.png>] (./test.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3412 strings out of 494820
- 43840 string characters out of 3178049
- 103073 words of memory out of 3000000
- 6490 multiletter control sequences out of 15000+200000
- 81178 words of font info for 133 fonts, out of 3000000 for 9000
- 198 hyphenation exceptions out of 8191
- 38i,15n,28p,3074b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 4448 strings out of 495003
+ 62691 string characters out of 6181404
+ 122514 words of memory out of 5000000
+ 7563 multiletter control sequences out of 15000+600000
+ 74546 words of font info for 119 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 38i,15n,38p,1755b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on test.pdf (5 pages, 2176209 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
+ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on test.pdf (6 pages, 2343740 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
