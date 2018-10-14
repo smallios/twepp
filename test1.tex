@@ -5,7 +5,6 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage{subcaption}
 \usepackage{apacite}
 \usepackage{lineno}
 \linenumbers
@@ -94,28 +93,8 @@ The board includes 5 low jitter programmable clock sources (Figure \ref{clocking
 
 
 \subsection{PCB}
-The board has 32 high speed differential-pairs running at 16 Gbps. The Firefly transceivers were placed very close to the FPGAs right side to achieve closer proximity to the Banks  were all the MGTs are to simplify board layout and enhances signal integrity (Figure \ref{fig:toplayer}). For the substrate, the Panasonic Megtron-6 was chosen due to the excellent high-frequency performance and impedance properties [Ref3]. A ground-plane has been placed between each layer containing high-speed traces, resulting in a 16-layer stack-up. All high speed differential pairs route lengths were matched by using serpentine routing (Figure \ref{fig:serpantine}). Finally to avoid additional signal distortion caused by the plated-through hole (PTH) VIAs, by removing the via stub using a technique knows as back-drilling.
+Plated-through hole (PTH) via structures in high layer-count printed circuit boards (PCBs) can significantly distort high speed digital signals that pass through them. Often the  distortion is severe enough that digital receivers can no longer ascertain whether a  logical one or a logical zero was originally transmitted. 
 
-
-\begin{figure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{pcb.png}
-  \caption{PCB top layer}
-  \label{fig:toplayer}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\linewidth]{serpentine_routing.png}
-  \caption{Serpantine routing}
-  \label{fig:serpantine}
-\end{subfigure}
-\caption{PCB details}
-\label{fig:pcb}
-\end{figure}
-
-
-\newpage
 
 \section{Firmware}
 
@@ -124,22 +103,15 @@ The board has 32 high speed differential-pairs running at 16 Gbps. The Firefly t
 The protocol is using the 64b/66b encoding. The links are asynchronous meaning that the main algorithmic logic is clocked with a lower frequency than the link clock. It allows more flexibility when choosing the logic clock. This is achieved using asynchronous FIFOs in the receiving and the transmitting side. To compensate for the difference of the frequency a special word is being injected when the FIFO is empty. The alignment of the links are also based on the insertion and check of this padding word. For testing purposes the local clock is running at 240 MHz and the link clock at 250 MHz.
 
 
-\subsection{Link bring-up and align}
+\subsection{aligmnent}
 The link bring-up and error detection is based on the generic 2-bit 64b/66b encoding header combined with the periodically sending of a padding word and CRC blocks.
 Single errors are considered soft errors and are monitored with a soft error counter.
 Continues errors are considered hard errors and result in auto reset and re-alignment of the links. 
 The overhead of the 64b/66b encoding is 3.125\% and the CRC/padding blocks are injected every 100 blocks resulting at a total overhead of 4.125\%.
-The maximum time for the link (re)alignment is ~200us
-
-\begin{figure}
-\centering
-\includegraphics[width=1\textwidth]{link_align.png}
-\caption{Link alignment block diagram}
-\label{align}
-\end{figure}
+The maximum time for the link (re)allignment is ~200us
 
 
-\subsection{Testing}
+\subsection*{Testing}
 The functionality of the links was extensively tested using the KCU-105 ultrascale developement board. For the tests an FMC loopback card was used to implement a copper loopback quad link.
 
 Latency :
@@ -148,13 +120,20 @@ Bit Error Rate Tests :
 BER test were done by sending PRBS-31 data over an FMC copper loopback card. The links run for more than 72 hours without errors resulting in a BER < 10 -16
 
 
+
 \section{Conclusions}
+The upgraded High Luminosity LHC, after the third Long Shutdown (LS3), will provide an instantaneous luminosity of 7.5 10\^{}\{34\} cm\^{}\{-2\} s\^{}\{-1\} (levelled), at the price of a dramatic increase of the number of pileup interactions. It is generally expected that the number of pileup interactions could reach 200 per bunch crossing. The upgraded detector will be read-out at an unprecedented data rate of up to 50 Tb/s and an event rate of 750 kHz. Within the scope of Phase 2 R\&D, a new Level-1 Trigger processor card was designed, by the Greek CMS Trigger team, to provide a hardware environment for developing and evaluating new Level-1 trigger muon designs and technologies. The board is powered by a Kintex UltraScale FPGA that provides the best price/performance/watt at 20nm and includes the highest signal processing bandwidth in a mid-range device. The ultrascale FPGA provides next-generation transceivers that reach speeds up to 16 Gbps. The board comes with state-of-the-art fibre optics technologies, using micro footprint optical interconnects, that provide up to 192 Gbps full-duplex bandwidth over 12 channels. Furthermore, a QSFP+ connector provides an additional 40 Gbps of bandwidth over 4 channels. For testing purposes, a new firmware was developed, implementing synchronous and asynchronous 16Gbps GTH links. The links use the 64b/66b encoding scheme with an overhead of 2 coding bits per 64 bits that is considerably more efficient than the previously-used 8b/10b encoding scheme. In addition, a simple infrastructure with input/output buffers and IPBus support, was developed to accommodate the testing of new algorithms. The hardware and firmware design of the processor card is presented here.
 
 
+\subsection{PCB}
+Plated-through hole (PTH) via structures in high layer-count printed circuit boards (PCBs) can significantly distort high speed digital signals that pass through them. Often the  distortion is severe enough that digital receivers can no longer ascertain whether a  logical one or a logical zero was originally transmitted. 
 
-\section{References}
-%[Ref3] https://industrial.panasonic.com/content/data/EM/PDF/emscatalog_1801_megtron6.pdf
-
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{serpentine_routing.png}
+\caption{Serpentine routing of high speed differential signals}
+\label{fig3}
+\end{figure}
 
 
 \end{document}
