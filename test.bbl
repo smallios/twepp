@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
 
-\end{thebibliography}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{skata}
+C.~Collaboration, \emph{{The Phase-2 Upgrade of the CMS Muon Detectors}},
+  Tech. Rep. CERN-LHCC-2017-012. CMS-TDR-016, CERN, Geneva, Sep, 2017.
+
+\end{thebibliography}\endgroup

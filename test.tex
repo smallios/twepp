@@ -10,6 +10,8 @@
 \usepackage{lineno}
 \linenumbers
 
+
+
 \title{Development and testing of a Trigger Processor Card based on a Kintex Ultrascale FPGA.}
 
 \ShortTitle{Development of a Trigger Processor Card based on a Kintex Ultrascale FPGA.}
@@ -121,10 +123,11 @@ The board has 32 high speed differential-pairs running at 16 Gbps. The Firefly t
 
 
 \subsection{Protocol}
-The protocol is using the 64b/66b encoding. The links are asynchronous meaning that the main algorithmic logic is clocked with a lower frequency than the link clock. It allows more flexibility when choosing the logic clock. This is achieved using asynchronous FIFOs in the receiving and the transmitting side. To compensate for the difference of the frequency a special word is being injected when the FIFO is empty. The alignment of the links are also based on the insertion and check of this padding word. For testing purposes the local clock is running at 240 MHz and the link clock at 250 MHz.
+The 16Gbps links firmware is a lightweight, link-layer protocol that can be used to move data point-to-point across one or more high-speed serial lanes. It suports simplex operation with continues data transfer. The links are asynchronous meaning that the main algorithmic logic is clocked with a lower frequency than the link clock, allowing more flexibility when choosing the logic clock. This is achieved using asynchronous FIFOs in the receiving and the transmitting side. To compensate for the difference of the frequency padding words are being injected on the transmitting side and are stripped away on the receiving side. The link initialization and error handling are also based on the insertion and check of those padding words. For testing purposes the local clock is running at 240 MHz and the link clock at 250 MHz. The link encoding is the 64b/66b line code that transforms 64-bit data to 66-bit line code to provide enough state changes to allow reasonable clock recovery and alignment of the data stream at the receiver[ref4]. The protocol overhead of 64b/66b encoding is 2 coding bits for every 64 payload bits or 3.125\%. This is considerably more efficient than the 25\% overhead of the previously-used 8b/10b encoding scheme, which added 2 coding bits to every 8 payload bits.
 
 
-\subsection{Link bring-up and align}
+
+\subsection{Link initialization and error handling}
 The link bring-up and error detection is based on the generic 2-bit 64b/66b encoding header combined with the periodically sending of a padding word and CRC blocks.
 Single errors are considered soft errors and are monitored with a soft error counter.
 Continues errors are considered hard errors and result in auto reset and re-alignment of the links. 
@@ -134,7 +137,7 @@ The maximum time for the link (re)alignment is ~200us
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{link_align.png}
-\caption{Link alignment block diagram}
+\caption{Link alignment and error handling block diagram}
 \label{align}
 \end{figure}
 
@@ -150,12 +153,15 @@ BER test were done by sending PRBS-31 data over an FMC copper loopback card. The
 
 \section{Conclusions}
 
-
-
-\section{References}
+skata \cite{skata}
+%\section{References}
 %[Ref3] https://industrial.panasonic.com/content/data/EM/PDF/emscatalog_1801_megtron6.pdf
+%[ref4] 
 
-
+\bibliographystyle{JHEP}
+\bibliography{bibliography}
 
 \end{document}
+
+
 
