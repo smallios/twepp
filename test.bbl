@@ -1,8 +1,20 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
-\bibitem{skata}
-C.~Collaboration, \emph{{The Phase-2 Upgrade of the CMS Muon Detectors}},
-  Tech. Rep. CERN-LHCC-2017-012. CMS-TDR-016, CERN, Geneva, Sep, 2017.
+\bibitem{Collaboration:2283192}
+C.~Collaboration, \emph{{The Phase-2 Upgrade of the CMS L1 Trigger Interim
+  Technical Design Report}},  Tech. Rep. CERN-LHCC-2017-013. CMS-TDR-017, CERN,
+  Geneva, Sep, 2017.
+
+\bibitem{mehta2013xilinx}
+N.~Mehta, \emph{Xilinx ultrascale architecture for high-performance, smarter
+  systems}, {\emph{Xilinx White Paper WP434} (2013) }.
+
+\bibitem{zbinden2018connector}
+E.~J. Zbinden and J.~A. MONGOLD, \emph{Connector assembly},  June~19, 2018.
+
+\bibitem{walker200064b}
+R.~Walker and R.~Dugan, \emph{64b/66b low-overhead coding proposal for serial
+  links}, .
 
 \end{thebibliography}\endgroup
