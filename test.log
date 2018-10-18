@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.10.17)  17 OCT 2018 03:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.10.17)  18 OCT 2018 06:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,7 +401,13 @@ File: clocking.png Graphic file (type png)
 <use clocking.png>
 Package pdftex.def Info: clocking.png used on input line 92.
 (pdftex.def)             Requested size: 344.16641pt x 202.53133pt.
- [3 <./firefly.png> <./clocking.png>]
+
+Overfull \hbox (3.36581pt too wide) in paragraph at lines 99--100
+[]\T1/ptm/m/n/10.95 The board pro-vides 32 high speed differential-pairs run-ni
+ng at 16 Gbps. The Fire-fly transceivers
+ []
+
+[3 <./firefly.png> <./clocking.png>]
 <pcb.png, id=64, 594.72188pt x 332.74312pt>
 File: pcb.png Graphic file (type png)
  <use pcb.png>
@@ -425,11 +431,11 @@ Package pdftex.def Info: link_align.png used on input line 134.
 Here is how much of TeX's memory you used:
  4127 strings out of 494946
  59278 string characters out of 6180980
- 115346 words of memory out of 5000000
+ 116298 words of memory out of 5000000
  7287 multiletter control sequences out of 15000+600000
  73925 words of font info for 117 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 40i,15n,39p,1360b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,15n,39p,1361b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dis
 t/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -442,7 +448,7 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on test.pdf (6 pages, 3119197 bytes).
+Output written on test.pdf (6 pages, 3118518 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams
