@@ -2,7 +2,7 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
 \bibitem{Collaboration:2283192}
-C.~Collaboration, \emph{{The Phase-2 Upgrade of the CMS L1 Trigger Interim
+{CMS Collaboration}, \emph{{The Phase-2 Upgrade of the CMS L1 Trigger Interim
   Technical Design Report}},  Tech. Rep. CERN-LHCC-2017-013. CMS-TDR-017, CERN,
   Geneva, Sep, 2017.
 
