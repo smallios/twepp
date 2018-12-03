@@ -46,7 +46,7 @@ E-mail: \email{stavros.mallios@cern.ch}}
 
 
 \section{Introduction}
-The upgraded High Luminosity LHC, after the third Long Shutdown (LS3), will provide an instantaneous luminosity of $7.5 \times 10^{34} cm^{-2} s^{-1}$ (levelled), at the price of a dramatic increase of the number of pileup interactions. It is expected that the number of pileup interactions could reach 200 per bunch crossing. The upgraded detector will be read-out at an unprecedented event rate of 750~KHz and a data rate of up to 50 Tb/s \cite{Collaboration:2283192}. Within the scope of Phase 2 R\&D, a new Level-1 Trigger processor card was designed, by the CMS Trigger teams from the University of Athens and University of Ioannina, to provide a hardware environment for developing and evaluating new Level-1 trigger muon designs and technologies. The board comes with state-of-the-art fiber optics technologies, using micro footprint optical interconnects. For testing purposes, a new firmware was developed, implementing asynchronous 16~Gbps GTH links. The links use the 64b/66b encoding scheme with an overhead of 2 coding bits per 64 bits that is considerably more efficient than the 8b/10b encoding scheme. The hardware and firmware design of the processor card is presented.
+The upgraded High Luminosity LHC, after the third Long Shutdown (LS3), will provide an instantaneous luminosity of $7.5 \times 10^{34} cm^{-2} s^{-1}$ (levelled), at the price of a dramatic increase of the number of pileup interactions. It is expected that the number of pileup interactions could reach 200 per bunch crossing. The upgraded detector will be read-out at an unprecedented event rate of 750~KHz and a data rate of up to 50 Tb/s \cite{Collaboration:2283192}. Within the scope of Phase 2 R\&D, a new Level-1 Trigger processor card was designed, by the CMS Trigger teams from the University of Athens and the University of Ioannina, to provide a hardware environment for developing and evaluating new Level-1 trigger muon designs and technologies. The board comes with state-of-the-art fiber optics technologies, using micro footprint optical interconnects. For testing purposes, a new firmware was developed, implementing asynchronous 16~Gbps GTH links. The links use the 64b/66b encoding scheme with an overhead of 2 coding bits per 64 bits that is considerably more efficient than the 8b/10b encoding scheme. The hardware and firmware design of the processor card is presented.
 
 \section{The hardware}
 The board is powered by the XCKU040 Kintex UltraScale FPGA, providing 20 next-generation GTH transceivers, that reach speeds up to 16.3~Gbps. The board comes with state-of-the-art fiber optics technologies from Samtec. The high performance interconnect system uses active optical engines over 12 full-duplex channels, at data rates up to 16~Gbps. Furthermore, 4 FPGA transceivers are routed to a QSFP28 connector, which can handle data rates of up to 28~Gbps per channel over 4 channels. In total, the board's 16x16 Gbps links, add up to a total optical bandwidth of approximately 256~Gbps in each direction, making it a high-performance all-optical data-stream processor (Figure \ref{fig1}). A Xilinx ZYNQ System-on-Chip (SoC) device will be used as the control interface for the Kintex UltraScale FPGA. The system controller sets up or queries on-board resources, such as the power controllers and programmable clocks.
@@ -61,15 +61,15 @@ The board is powered by the XCKU040 Kintex UltraScale FPGA, providing 20 next-ge
 
 
 \subsection{The FPGA}
-The onboard XCKU040 FPGA, a  mid-range Xilinx Kintex Ultrascale high-performance FPGA which focuses on a price/performance ratio. It has high DSP and block RAM-to-logic ratios and next-generation transceivers. Combined with low-cost packaging, it enables an optimum blend of capability and cost. The part is available in a FFVA1156 package, with all the high speed Multi-Gigabit Transceivers (MGTs)  placed on the left side of the part (Figure \ref{xcku040}). The ultrascale architecture provides key innovations like next generation routing, ASIC-like clocking and enhanced logic blocks for a target of 90\% utilization high-speed memory cascading, to remove bottlenecks in DSP and packet processing \cite{mehta2013xilinx}.
+The onboard XCKU040 FPGA, a  mid-range Xilinx Kintex Ultrascale high-performance FPGA which focuses on a price/performance ratio. It has high DSP and block RAM-to-logic ratios and next-generation transceivers. Combined with low-cost packaging, it enables an optimum blend of capability and cost. The part is available in a FFVA1156 package, with all the high speed Multi-Gigabit Transceivers (MGTs)  placed on the left side of the part. The ultrascale architecture provides key innovations like next generation routing, ASIC-like clocking and enhanced logic blocks for a target of 90\% utilization high-speed memory cascading, to remove bottlenecks in DSP and packet processing \cite{mehta2013xilinx}.
 The board also includes 2~GB of DDR4 memory (four [256~MB x 16] devices) at 1200~MHz / 2400~Mbps.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{xcku040_pinout.png}
-\caption{FFVA1156 Package - XCKU040 I/O Bank Diagram}
-\label{xcku040}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.8\textwidth]{xcku040_pinout.png}
+%\caption{FFVA1156 Package - XCKU040 I/O Bank Diagram}
+%\label{xcku040}
+%\end{figure}
 
 
 \subsection{High Speed Optical Links}
@@ -85,14 +85,14 @@ Flyover System (source: Samtec) }
 
 
 \subsection{Clocking}
-The board includes 5 low-jitter programmable clock sources (Figure \ref{clocking}). The GTH transceivers connected to the high speed Firefly modules, are clocked by a dedicated, low jitter, quad clock generator (Si5338). A low-jitter frequency generator (Si570) is connected to the QSFP28 transceivers and can also be used as a secondary clock source to the Firefly transceivers. A jitter attenuator (Si5328B) is used to reduce the jitter of a received recovered clock. A fixed frequency clock source can be used as a free running clock for reset and initialization FSMs. Finally an SMA external clock input is also available. All programmable clocks are accessed through a dedicated I$^2$C bus.
+The board includes 5 low-jitter programmable clock sources. The GTH transceivers connected to the high speed Firefly modules, are clocked by a dedicated, low jitter, quad clock generator (Si5338). A low-jitter frequency generator (Si570) is connected to the QSFP28 transceivers and can also be used as a secondary clock source to the Firefly transceivers. A jitter attenuator (Si5328B) is used to reduce the jitter of a received recovered clock. A fixed frequency clock source can be used as a free running clock for reset and initialization FSMs. Finally an SMA external clock input is also available. All programmable clocks are accessed through a dedicated I$^2$C bus.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{clocking.png}
-\caption{ Clocking architecture of the board}
-\label{clocking}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.8\textwidth]{clocking.png}
+%\caption{ Clocking architecture of the board}
+%\label{clocking}
+%\end{figure}
 
 
 \subsection{PCB}
